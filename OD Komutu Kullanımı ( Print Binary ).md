@@ -8,7 +8,7 @@ Kullanımı :
 od [OPTION]... [FILE]...
 ```
 
-### 1 - Octal Format :** -b** option
+### 1 - Octal Format : -b option
 ```bash
 $ od -b input
 0000000 061 012 062 012 063 012 064 012 065 012 066 012 067 012 070 012
@@ -18,7 +18,7 @@ $ od -b input
 0000063
 ```
 
-### 2 - Character Format :** -c **option
+### 2 - Character Format : -c option
 ```bash
 $ od -c input
 0000000   1  \n   2  \n   3  \n   4  \n   5  \n   6  \n   7  \n   8  \n
@@ -28,11 +28,11 @@ $ od -c input
 0000063
 ```
 
-### 3 - İlk satırın (byte ofset / Sıra numarası) farklı gösterimleri için :** -A **option
-- Hexadecimal (using **-x **along with -A)
-- Octal (using** -o** along with -A) -> **10'luk sistem**
-- Decimal (using** -d **along with -A)
-### 4 - Ofset olmadan gösterim için -> **-An**
+### 3 - İlk satırın (byte ofset / Sıra numarası) farklı gösterimleri için : -A option
+- Hexadecimal (using **-x** along with -A)
+- Octal (using **-o** along with -A) -> **10'luk sistem**
+- Decimal (using **-d** along with -A)
+### 4 - Ofset olmadan gösterim için -> -An
 ```bash
 $ od -An -c input
    1  \n   2  \n   3  \n   4  \n   5  \n   6  \n   7  \n   8  \n
@@ -41,7 +41,7 @@ $ od -An -c input
    2   0  \n
 ```
 
-### 5 - İlk n karakteri atlamak ve sonrasından yazmaya başlamak için : **-j **option
+### 5 - İlk n karakteri atlamak ve sonrasından yazmaya başlamak için : -j option
 ```bash
 $ od -j9 -c input
 ```
@@ -51,7 +51,7 @@ $ od -j9 -c input
 $ od -N9 -c input
 ```
 
-### 7 -  Decimal integers gösterimi için : **-i **option
+### 7 -  Decimal integers gösterimi için : -i option
 ```bash
 $ od -i input
 0000000   171051569   171182643   171313717   171444791
@@ -61,7 +61,7 @@ $ od -i input
 0000063
 ```
 
-### 8 - Hexadecimal 2 byte units gösterim için : **-x **option
+### 8 - Hexadecimal 2 byte units gösterim için : -x option
 ```bash
 $ od -x input
 0000000 0a31 0a32 0a33 0a34 0a35 0a36 0a37 0a38
@@ -71,7 +71,7 @@ $ od -x input
 0000063
 ```
 
-### 9 - 2 byte octal units gösterim için : **-o **option ( Bu kısım **default **gösterimdir )
+### 9 - 2 byte octal units gösterim için : -o option ( Bu kısım default gösterimdir )
 ```bash
 $ od -o input
 0000000 005061 005062 005063 005064 005065 005066 005067 005070
@@ -81,7 +81,7 @@ $ od -o input
 0000063
 ```
 
-### 10 - Yazılacak satır genişliğini ayarlamak için : **-w **option
+### 10 - Yazılacak satır genişliğini ayarlamak için : -w option
 ```bash
 $ od -w1 -c -Ad input
 0000000   1
@@ -93,13 +93,13 @@ $ od -w1 -c -Ad input
 0000006   4
 ```
 
-### 11 - Gizlenen tekrarlanan karakterlerin gösterinimini sağlamak için : **-v **option
-Normalde tekrarlayan karakterler *** **işariyle gösterilir. Bunların gösterimini sağlamak için bu parametre kullanılabilir. 
+### 11 - Gizlenen tekrarlanan karakterlerin gösterinimini sağlamak için : -v option
+Normalde tekrarlayan karakterler * işariyle gösterilir. Bunların gösterimini sağlamak için bu parametre kullanılabilir. 
 ```bash
 $ od -v input
 ```
 
-### 12 - Terminal üzerinden girilecek inputların göstermi için : **- **option
+### 12 - Terminal üzerinden girilecek inputların göstermi için : - option
 ```bash
 $ od -c -
 ```
