@@ -142,6 +142,15 @@
 - `man <komut>`
     - Komutla ilgili manuel dosyaya ulaşmayı sağlar. 
     - `man -k <komut>` ile arama yapılabilir.
+    - `man man` komutu ile manuel kullanımı ile ilgili dökümantasyona ulaşılabilir.
+    - Eksik ve linux üstünde gelmeyen dökümanlara (minimal sürümlerinde özellikle) aşağıdaki link aracılığıyla internet üzerinden ulaşılabilir.
+        - https://linux.die.net/man/
+    - `man <section> <komut>`
+        - Bu komut ile farklı section'lar üzerinde komut aranabilir.
+        - Section kısmı `man man` içinde bulunabilir.
+    - `/` kullanılarak arama yapılabilir.
+        - `p` > önceki
+        - `n` > sonraki
 - `wall <message>`
     - Kullanıcıların diğer kullanıcıların ekranına mesaj göndermesini sağlar. 
 - `head <dosya>`
@@ -157,6 +166,9 @@
 - `less <dosya>`
     - Dosyayı bir terminal penceresi büyüklüğünde açar.
     - Yön tuşları yardımıyla kaydırmayı sağlar.
+    - `/` kullanılarak arama yapılabilir.
+        - `p` > önceki
+        - `n` > sonraki
 - `more <dosya>`
     - less e benzer ama daha ilkeldir.
 - `script`
